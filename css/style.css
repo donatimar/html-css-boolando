@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-/* UTILS */
+/* # UTILS */
 
 .container {
   width: 1000px;
@@ -27,6 +27,27 @@ body {
   margin-right: 5px;
 }
 
+h2 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: lighter;
+}
+
+.heart {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.heart:hover {
+  color: red;
+}
+
 /* # HEADER */
 
 header {
@@ -34,6 +55,7 @@ header {
   background-color: #ff6900;
   width: 100%;
   padding: 20px 0;
+  z-index: 1;
 }
 
 .top-header {
@@ -44,4 +66,87 @@ header {
 
 .logo img {
   width: 150px;
+}
+
+/* # MAIN */
+
+.box-container {
+  padding: 130px 0;
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 32%;
+}
+
+.details {
+  position: absolute;
+  display: inline-block;
+  bottom: 40px;
+  left: 0;
+  color: white;
+}
+
+.sale {
+  display: inline-block;
+  font-weight: bold;
+  color: red;
+}
+
+i {
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  padding: 12px;
+}
+
+.discount {
+  display: inline-block;
+  background-color: red;
+  padding: 5px 8px;
+}
+
+.sustainability {
+  display: inline-block;
+  background-color: green;
+  padding: 5px 8px;
+}
+
+.info > span {
+  font-size: 0.9rem;
+}
+
+.price {
+  text-decoration: line-through;
+}
+
+div.photo {
+  position: relative;
+  width: 100%;
+}
+
+.photo-1 {
+  width: 100%;
+}
+
+.photo-2 {
+  display: none;
+  width: 100%;
+}
+
+div.photo:hover .photo-1 {
+  display: none;
+}
+
+div.photo:hover .photo-2 {
+  display: block;
 }
