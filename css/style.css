@@ -84,7 +84,8 @@ header {
 }
 
 .card {
-  width: 32%;
+  width: 30%;
+  flex-grow: 1;
 }
 
 .details {
